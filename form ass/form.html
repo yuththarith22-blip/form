@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Create Account</h1>
+        <form>
+            <div class="form-row">
+                <div>
+                    <label for="first-name">First Name*</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="enter your first name">
+                </div>
+                <div>
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="enter your last name">
+                </div>
+            </div>
+            <div class="form-rowfull">
+                <div>
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" placeholder="enter your email">
+                </div>
+            </div>
+            <div class="form-row">
+                <div>
+                    <label for="password">Password *</label>
+                    <input type="password" id="password" name="password" placeholder="enter your password">
+                </div>
+                <div>
+                    <label for="confirm-password">Confirm Password *</label>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="enter your password again">
+                </div>
+            </div>
+            
+
+            <div class="form-row">
+                <div>
+                    <label>Gender:</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="gender"> Male</label>
+                        <label><input type="radio" name="gender"> Female</label>
+                    </div>
+                </div>
+                <div>
+                    <label>Hobbies</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="hobbies"> Music</label>
+                        <label><input type="checkbox" name="hobbies"> Sports</label>
+                        <label><input type="checkbox" name="hobbies"> Travel</label>
+                        <label><input type="checkbox" name="hobbies"> Movies</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div>
+                    <label for="income-source">Source of income</label>
+                    <select id="income-source" name="income-source">
+                        <option>Employed</option>
+                        <option>Self-employed</option>
+                        <option>Student</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="income">Income</label>
+                    <div class="range-group">
+                        <input type="range" id="income" name="income" min="0" max="100" value="50">
+                        <span class="range-label">20K</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div>
+                    <label for="profile-picture">Upload Profile Picture</label>
+                    <input type="file" id="profile-picture" name="profile-picture">
+                </div>
+                <div>
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age" placeholder="18">
+                </div>
+            </div>
+
+            <div class="form-rowfull">
+                <div>
+                    <label for="bio">Bio</label>
+                    <textarea id="bio" name="bio" placeholder="enter your bio"></textarea>
+                </div>
+            </div>
+
+            <button type="submit">Create</button>
+
+        </form>
+    </div>
+</body>
+</html>
